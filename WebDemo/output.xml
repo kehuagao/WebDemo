@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20180421 23:02:16.678" generator="Robot 3.0.3 (Python 2.7.14 on win32)">
+<suite source="C:\Python27\WebDemo\login_tests" id="s1" name="Login Tests">
+<suite source="C:\Python27\WebDemo\login_tests\gherkin_login.robot" id="s1-s1" name="Gherkin Login">
+<test id="s1-s1-t1" name="Valid Login">
+<kw name="Given browser is opened to login page">
+<kw name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180421 23:02:17.094" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180421 23:07:27.757" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" endtime="20180421 23:07:27.757" starttime="20180421 23:07:27.730"></status>
+</kw>
+<msg timestamp="20180421 23:07:27.768" level="FAIL">TimeoutException: Message: Timeout loading page after 300000ms
+</msg>
+<status status="FAIL" endtime="20180421 23:07:27.769" starttime="20180421 23:02:17.094"></status>
+</kw>
+<status status="FAIL" endtime="20180421 23:07:27.769" starttime="20180421 23:02:17.093"></status>
+</kw>
+<status status="FAIL" endtime="20180421 23:07:27.769" starttime="20180421 23:02:17.092"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20180421 23:07:28.735" starttime="20180421 23:07:27.771"></status>
+</kw>
+<status status="FAIL" endtime="20180421 23:07:28.736" critical="yes" starttime="20180421 23:02:17.091">TimeoutException: Message: Timeout loading page after 300000ms
+</status>
+</test>
+<doc>A test suite with a single Gherkin style test.
+
+This test is functionally identical to the example in
+valid_login.robot file.</doc>
+<status status="FAIL" endtime="20180421 23:07:28.739" starttime="20180421 23:02:16.737"></status>
+</suite>
+<suite source="C:\Python27\WebDemo\login_tests\invalid_login.robot" id="s1-s2" name="Invalid Login">
+<kw type="setup" name="Open Browser To Login Page" library="resource">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>${LOGIN URL}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20180421 23:07:28.758" level="INFO">Opening browser 'Firefox' to base url 'http://localhost:7272/'.</msg>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<status status="FAIL" endtime="20180421 23:11:25.400" starttime="20180421 23:11:25.399"></status>
+</kw>
+<msg timestamp="20180421 23:11:25.400" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<status status="FAIL" endtime="20180421 23:11:25.403" starttime="20180421 23:07:28.757"></status>
+</kw>
+<status status="FAIL" endtime="20180421 23:11:25.404" starttime="20180421 23:07:28.757"></status>
+</kw>
+<test id="s1-s2-t1" name="Invalid Username">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:25.406" critical="yes" starttime="20180421 23:11:25.404">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t2" name="Invalid Password">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:25.413" critical="yes" starttime="20180421 23:11:25.410">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t3" name="Invalid Username And Password">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:25.421" critical="yes" starttime="20180421 23:11:25.418">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t4" name="Empty Username">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:25.430" critical="yes" starttime="20180421 23:11:25.428">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t5" name="Empty Password">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:25.443" critical="yes" starttime="20180421 23:11:25.441">Test execution stopped due to a fatal error.</status>
+</test>
+<test id="s1-s2-t6" name="Empty Username And Password">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:25.451" critical="yes" starttime="20180421 23:11:25.449">Test execution stopped due to a fatal error.</status>
+</test>
+<kw type="teardown" name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<kw name="Capture Page Screenshot" library="Selenium2Library">
+<doc>Takes screenshot of the current page and embeds it into log file.</doc>
+<msg timestamp="20180421 23:11:26.485" level="FAIL">error: [Errno 10061] </msg>
+<status status="FAIL" endtime="20180421 23:11:26.485" starttime="20180421 23:11:25.462"></status>
+</kw>
+<msg timestamp="20180421 23:11:26.485" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: error: [Errno 10061] </msg>
+<msg timestamp="20180421 23:11:26.499" level="FAIL">CannotSendRequest</msg>
+<status status="FAIL" endtime="20180421 23:11:26.500" starttime="20180421 23:11:25.459">CannotSendRequest</status>
+</kw>
+<doc>A test suite containing tests related to invalid login.
+
+These tests are data-driven by their nature. They use a single
+keyword, specified with Test Template setting, that is called
+with different arguments to cover different scenarios.
+
+This suite also demonstrates using setups and teardowns in
+different levels.</doc>
+<status status="FAIL" endtime="20180421 23:11:26.500" starttime="20180421 23:07:28.745">Suite setup failed:
+Execution terminated by signal
+
+Also suite teardown failed:
+CannotSendRequest</status>
+</suite>
+<suite source="C:\Python27\WebDemo\login_tests\valid_login.robot" id="s1-s3" name="Valid Login">
+<test id="s1-s3-t1" name="Valid Login">
+<tags>
+<tag>robot-exit</tag>
+</tags>
+<status status="FAIL" endtime="20180421 23:11:26.515" critical="yes" starttime="20180421 23:11:26.514">Test execution stopped due to a fatal error.</status>
+</test>
+<doc>A test suite with a single test for valid login.
+
+This test has a workflow that is created using keywords in
+the imported resource file.</doc>
+<status status="FAIL" endtime="20180421 23:11:26.520" starttime="20180421 23:11:26.511"></status>
+</suite>
+<status status="FAIL" endtime="20180421 23:11:26.528" starttime="20180421 23:02:16.686"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="8" pass="0">Critical Tests</stat>
+<stat fail="8" pass="0">All Tests</stat>
+</total>
+<tag>
+<stat info="combined" fail="1" combined="NOT robot-exit" pass="0">NOT robot-exit</stat>
+<stat fail="7" pass="0">robot-exit</stat>
+</tag>
+<suite>
+<stat fail="8" id="s1" name="Login Tests" pass="0">Login Tests</stat>
+<stat fail="1" id="s1-s1" name="Gherkin Login" pass="0">Login Tests.Gherkin Login</stat>
+<stat fail="6" id="s1-s2" name="Invalid Login" pass="0">Login Tests.Invalid Login</stat>
+<stat fail="1" id="s1-s3" name="Valid Login" pass="0">Login Tests.Valid Login</stat>
+</suite>
+</statistics>
+<errors>
+<msg timestamp="20180421 23:11:25.400" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: Execution terminated by signal</msg>
+<msg timestamp="20180421 23:11:26.485" level="WARN">Keyword 'Capture Page Screenshot' could not be run on failure: error: [Errno 10061] </msg>
+</errors>
+</robot>
